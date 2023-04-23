@@ -117,5 +117,10 @@ the MLP model produced comparable results to the logistic regression model, we b
 ![Log_mlp_shap](https://user-images.githubusercontent.com/45512716/233868895-814169b5-cabc-4cc0-9296-64dc29d6fdb9.png)
 
 - K-Nearest Neighbours
+
 K-Nearest Neighbours was the model that performed the worst on the Titanic dataset. Since KNN is a distance-based algorithm, it may not be well-suited for datasets with heavy skewness, such as the Titanic dataset. In this case, a small subset of passengers with similar features were able to survive, while the majority of the passengers did not. Because everyone who survived was grouped closely together in feature space, the model was prone to overfitting and had difficulty making accurate predictions on new data. Additionally, KNN had the highest false positive rate among all the models tested, indicating that it had a tendency to incorrectly classify non-survivors as survivors.
+
+![knn](https://user-images.githubusercontent.com/45512716/233869903-9d241b59-cad1-4fe1-8ff0-7a9069df71d2.png)
+
+
 
