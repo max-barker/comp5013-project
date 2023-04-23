@@ -32,6 +32,5 @@ If running locally, you need to ensure all libraries are install. This can be do
 ### Metrics
 
 ### Results
-![Alt text](relative%20path/to/results1.png?raw=true "Title")
 
 ### Analysis
