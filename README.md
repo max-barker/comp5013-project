@@ -91,6 +91,8 @@ The graph "Survival by Family Size" shows the distribution of people that surviv
 
 ![Plots around Family Size](https://user-images.githubusercontent.com/39186016/233869302-72378016-8ba6-489a-a3ca-f1a75c3784ae.png)
 
+Other plots were created, such as "Class by Embarked Location" and "Survival by Embarked Location" but these corroborate the finding above that the higher classes were given priority when boarding the lifeboats and thus have a higher survival rate.
+
 ### Metrics
 - Accuracy
 - Recall
