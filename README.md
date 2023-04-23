@@ -73,11 +73,21 @@ Next, the code compares the performance of the models using the above metrics. F
 
 Looking at the dataset as a whole, the Principal Component Analysis (PCA) was not successful in reducing the dimensionality of the data. This is because the data is not linearly separable and so there is no clear correlation or pattern between the features. However, the Attributes Correlation Heatmap gives an insight into the features are most correlated to survival. It also highlighted the features that had been engineered as they had a high with original features, especially those directly derived from an original feature. After performing a Pearsone correlation test with a 0.05 significance level, we can see that all attributes apart from Family_size and SibSp are significant to an individuals survival.  
 
+![pca](https://user-images.githubusercontent.com/39186016/233869244-818770d5-29d7-44c4-88a1-a69853867a70.png)
+
+![heatmap](https://user-images.githubusercontent.com/39186016/233869218-ceb0ca48-a139-411e-b052-b31cac6e66c2.png)
+
 Moreover, the phrase "Women and children first" was popularised by [Marshall (1912)](https://books.google.co.uk/books?id=xbxB0JI3OQ0C&q=women+and+children+first&redir_esc=y) and the data displayed in the following image corroborates that this was in fact followed on the Titanic; 75.3% of women on the Titanic survived in comparison to only 20.1% of men. Furthermore, 54% of children on the Titanic survived in comparison to only 37.9% of adults. The graph "Survival by Age" shows the distribution of people that survived by their age.
+
+![age_and_sex](https://user-images.githubusercontent.com/39186016/233869253-2eefd617-b568-41ba-8c3a-b7fd990e23e5.png)
 
 Furthermore, the data shows that the higher the deck, the higher the survival rate. One can assume this is because the higher the deck, the closer the passenger was to the lifeboats. The graph "Survival by Deck" shows the distribution of people that survived by their deck; every deck aside from Deck T had a survival rate greater than 50%. More interestingly, the graph "Deck by Class" shows the distribution of people by their deck and class. This shows that the higher the class, the higher the deck. This is because the higher the class, the more expensive the ticket and so the higher the deck. However, it does give us insight into the fact that the higher classes were given priority when boarding the lifeboats. This is backed up by the graph "Survival by Class".
 
+![class_and_deck](https://user-images.githubusercontent.com/39186016/233869279-7cf4562a-84c8-418d-9441-cdf99dd46ae5.png)
+
 The graph "Survival by Family Size" shows the distribution of people that survived by their family size, with a family size of 3 having the lowest mortality rate. This shows that the larger the family size, the lower the survival rate. This is because the larger the family size, the less likely it is that the family will be able to board a lifeboat together. Additionally, the graph "Family Size by Class" shows that the higher classes tended to travel with smaller family sizes. 
+
+![family_size](https://user-images.githubusercontent.com/39186016/233869302-72378016-8ba6-489a-a3ca-f1a75c3784ae.png)
 
 ### Metrics
 - Accuracy
