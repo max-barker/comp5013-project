@@ -134,25 +134,30 @@ This is the ratio of correctly predicted observation to the total observations. 
 This is split into a Positive and a Negative Liklihood Ratio. The Positive Liklihood Ratio is the ratio of the probability of the positive class given the predictor, to the probability of the negative class given the predictor. The Negative Liklihood Ratio is the ratio of the probability of the negative class given the predictor, to the probability of the positive class given the predictor. A Positive Liklihood Ratio greater than 1 indicates that the predictor is more likely to predict a positive outcome, and a Negative Liklihood Ratio greater than 1 indicates that the predictor is more likely to predict a negative outcome.
 
 ### Results
-![results1](https://user-images.githubusercontent.com/45512716/233865183-236dcad5-8b4a-4c38-8920-658990b6020f.png)
-![results 2](https://user-images.githubusercontent.com/45512716/233865155-e6331a4d-d02a-40c8-ae65-d85676b02b98.png)
+
+![roc](https://user-images.githubusercontent.com/39186016/233873040-fa7afd12-0cb7-487d-af84-a8b667025f77.png)
+![det](https://user-images.githubusercontent.com/39186016/233873041-bc08ef1a-51c1-4353-99bf-9bddc56d1ddf.png)
+![pr](https://user-images.githubusercontent.com/39186016/233873039-4b2e0d56-c31b-4d36-9bb0-f01217d56f86.png)
+![accuracy](https://user-images.githubusercontent.com/45512716/233865183-236dcad5-8b4a-4c38-8920-658990b6020f.png)
+![likelihood](https://user-images.githubusercontent.com/45512716/233865155-e6331a4d-d02a-40c8-ae65-d85676b02b98.png)
 
 ### Analysis
-# Highest perfoming models
 
-- Logistic Regression
+##### Highest perfoming models
 
-Both logistic regression and MLP models were found to achieve the highest accuracy among all the models tested. The visualizations  of the data indicated that certain features, such as gender and age, had significant discrepancies in their distribution between   the survival and non-survival groups. This suggests that these features likely have significant coefficients, as a result, the     logistic regression model had a easier time learning due to its ability to learn from significant feature coefficients.
+**Logistic Regression**
 
-- MLP
+Both logistic regression and MLP models were found to achieve the highest accuracy among all the models tested. The visualizations  of the data indicated that certain features, such as gender and age, had significant discrepancies in their distribution between the survival and non-survival groups. This suggests that these features likely have significant coefficients, as a result, the logistic regression model had a easier time learning due to its ability to learn from significant feature coefficients.
 
-the MLP model produced comparable results to the logistic regression model, we believe this is because of its ability to capture non-linear relationships between the input features and the outcome variable. The SHAP values for the MLP model reveal that the difference between the model's average predictions and expected value is small, indicating that the MLP model was able to identify which features were most important in making accurate predictions. Overall, these findings suggest that the MLP model was able to capture complex relationships between the input features and the outcome variable, leading to its strong performance.
+**MLP**
+
+The MLP model produced comparable results to the logistic regression model, we believe this is because of its ability to capture non-linear relationships between the input features and the outcome variable. The SHAP values for the MLP model reveal that the difference between the model's average predictions and expected value is small, indicating that the MLP model was able to identify which features were most important in making accurate predictions. Overall, these findings suggest that the MLP model was able to capture complex relationships between the input features and the outcome variable, leading to its strong performance.
 
 ![Log_mlp_shap](https://user-images.githubusercontent.com/45512716/233868895-814169b5-cabc-4cc0-9296-64dc29d6fdb9.png)
 
-# Lowest perfoming model
+##### Lowest perfoming model
 
-- K-Nearest Neighbours
+**K-Nearest Neighbours**
 
 K-Nearest Neighbours was the model that performed the worst on the Titanic dataset. Since KNN is a distance-based algorithm, it may not be well-suited for datasets with heavy skewness, such as the Titanic dataset. In this case, a small subset of passengers with similar features were able to survive, while the majority of the passengers did not. Because everyone who survived was grouped closely together in feature space, the model was prone to overfitting and had difficulty making accurate predictions on new data. Additionally, KNN had the highest false positive rate among all the models tested, indicating that it had a tendency to incorrectly classify non-survivors as survivors.
 
