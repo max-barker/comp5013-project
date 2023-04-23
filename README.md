@@ -37,9 +37,14 @@ Next, the code compares the performance of the models using the above metrics. F
 ## Findings
 
 ### Metrics
+- Accuracy
+- Recall
+- ROC curve
 
 
 ### Results
+![results1](https://user-images.githubusercontent.com/45512716/233865183-236dcad5-8b4a-4c38-8920-658990b6020f.png)
 ![results 2](https://user-images.githubusercontent.com/45512716/233865155-e6331a4d-d02a-40c8-ae65-d85676b02b98.png)
 
 ### Analysis
+
