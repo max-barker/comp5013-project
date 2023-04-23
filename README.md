@@ -32,6 +32,6 @@ If running locally, you need to ensure all libraries are install. This can be do
 ### Metrics
 
 ### Results
-![alt text](http://url/to/results1.png)
+
 
 ### Analysis
