@@ -100,10 +100,26 @@ Other plots were created, such as "Class by Embarked Location" and "Survival by 
 ![Plots around Embarked Location](https://user-images.githubusercontent.com/39186016/233869547-ce887f83-4d5f-4f58-bc0d-9be19c608781.png)
 
 ### Metrics
-- Accuracy
-- Recall
-- ROC curve
 
+#### ROC Curve 
+
+This shows the tradeoff between the true positive rate and false positive rate at different classification levels. A high area under the curve represents both high recall and high precision, where high precision relates to a low false positive rate, and high recall relates to a low false negative rate. High scores for both show that the classifier is returning accurate results (high precision), as well as returning a majority of all positive results (high recall).
+
+#### DET Curve
+
+This shows the tradeoff between the false alarm rate and miss rate. A high area under the curve represents both high recall and high precision, where high precision relates to a low false alarm rate, and high recall relates to a low miss rate. High scores for both show that the classifier is returning accurate results (high precision), as well as returning a majority of all positive results (high recall).
+
+#### Precision-Recall Curve
+
+This shows the tradoff between precision and recall. The precision is the ratio of true positives to the sum of true and false positives. The recall is the ratio of true positives to the sum of true positives and false negatives. A high area under the curve represents both high recall and high precision, where high precision relates to a low false positive rate, and high recall relates to a low false negative rate. High scores for both show that the classifier is returning accurate results (high precision), as well as returning a majority of all positive results (high recall).
+
+#### Accuracy 
+
+This is the ratio of correctly predicted observation to the total observations. Accuracy is a good measure when the target classes are balanced, i.e. when the number of data points belonging to each class is about the same.
+
+#### Class Liklihood Ratio
+
+This is split into a Positive and a Negative Liklihood Ratio. The Positive Liklihood Ratio is the ratio of the probability of the positive class given the predictor, to the probability of the negative class given the predictor. The Negative Liklihood Ratio is the ratio of the probability of the negative class given the predictor, to the probability of the positive class given the predictor. A Positive Liklihood Ratio greater than 1 indicates that the predictor is more likely to predict a positive outcome, and a Negative Liklihood Ratio greater than 1 indicates that the predictor is more likely to predict a negative outcome.
 
 ### Results
 ![results1](https://user-images.githubusercontent.com/45512716/233865183-236dcad5-8b4a-4c38-8920-658990b6020f.png)
