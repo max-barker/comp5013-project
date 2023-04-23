@@ -127,4 +127,26 @@ K-Nearest Neighbours was the model that performed the worst on the Titanic datas
 ![knn](https://user-images.githubusercontent.com/45512716/233869903-9d241b59-cad1-4fe1-8ff0-7a9069df71d2.png)
 
 
+### Hyperparameter Tuning
 
+The hyperparameters for the MLP and Logistic Regression models were tuned using a grid search. The grid search was performed using 5-fold cross-validation, and the best hyperparameters were selected based on the model's accuracy on the validation set. The best hyperparameters were found to be:
+
+- MLP
+    - activation: tanh
+    - alpha: 0.0001
+    - hidden_layer_sizes: (150, 100, 50)
+    - learning_rate: adaptive
+    - max_iter: 150
+    - solver: adam
+
+- Logistic Regression
+    - C: 10
+    - max_iter: 1000
+    - penalty: l1
+    - solver: liblinear
+
+Despite the fact that these hyperparameters were found to be optimal for the Titanic dataset, they did not improve in performance. Both optimised models performed worse in all metrics than the default models as can be seen by the graphs below.
+
+
+
+This is because the hyperparameters were tuned using a grid search, which only explored the combination of hyperparameters we defined. As a result, the grid search may not be able to find the true optimal hyperparameters, only the optimal parameters out of the set given. In the future, we would like to explore more advanced hyperparameter tuning methods, such as Bayesian optimization, to find the optimal hyperparameters for the given dataset.
