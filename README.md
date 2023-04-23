@@ -140,10 +140,9 @@ This is split into a Positive and a Negative Liklihood Ratio. The Positive Likli
 ### Analysis
 - Highest performing
     - Logistic Regression
-
 Both logistic regression and MLP models were found to achieve the highest accuracy among all the models tested. The visualizations  of the data indicated that certain features, such as gender and age, had significant discrepancies in their distribution between   the survival and non-survival groups. This suggests that these features likely have significant coefficients, as a result, the     logistic regression model had a easier time learning due to its ability to learn from significant feature coefficients.
 
-    - MLP
+   - MLP
 
 the MLP model produced comparable results to the logistic regression model, we believe this is because of its ability to capture non-linear relationships between the input features and the outcome variable. The SHAP values for the MLP model reveal that the difference between the model's average predictions and expected value is small, indicating that the MLP model was able to identify which features were most important in making accurate predictions. Overall, these findings suggest that the MLP model was able to capture complex relationships between the input features and the outcome variable, leading to its strong performance.
 
