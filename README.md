@@ -145,8 +145,19 @@ The hyperparameters for the MLP and Logistic Regression models were tuned using 
     - penalty: l1
     - solver: liblinear
 
-Despite the fact that these hyperparameters were found to be optimal for the Titanic dataset, they did not improve in performance. Both optimised models performed worse in all metrics than the default models as can be seen by the graphs below.
+Despite the fact that these hyperparameters were found to be optimal for the Titanic dataset, they did not improve in performance. Both optimised models performed worse in all metrics than the default models as can be seen by the graphs below. However, they still performed better than all of the other types of default model, showing that for this dataset, Logistic Regression or MLP are the best optimisers.
 
-
+![output](https://user-images.githubusercontent.com/39186016/233870599-a54f4a59-0c79-44fe-bf64-8f7dd4e2adf7.png)
+![output1](https://user-images.githubusercontent.com/39186016/233870600-06216e4d-51b7-4581-9368-cca8e386e5d1.png)
+![output2](https://user-images.githubusercontent.com/39186016/233870601-ab994166-dd07-4312-9c40-80817f60ed6b.png)
+![output3](https://user-images.githubusercontent.com/39186016/233870602-b487b280-6eb7-495e-958f-1cf75776cfd4.png)
+![output4](https://user-images.githubusercontent.com/39186016/233870603-4024d930-5c56-4816-bdd7-b862ffbd323c.png)
+![output5](https://user-images.githubusercontent.com/39186016/233870604-165682e8-ca6a-47ee-b00c-e992948fe9b6.png)
+![output6](https://user-images.githubusercontent.com/39186016/233870588-493da76c-77e9-4165-bb89-101dfccf551e.png)
+![output7](https://user-images.githubusercontent.com/39186016/233870590-d10fb7f1-6002-4b16-83f1-6143a4bd6c43.png)
+![output8](https://user-images.githubusercontent.com/39186016/233870593-dcb8dc98-c13c-4964-b3b7-479be433d2f5.png)
+![output9](https://user-images.githubusercontent.com/39186016/233870595-61e09b8e-93d7-4ca9-af21-3ed96319232b.png)
+![output10](https://user-images.githubusercontent.com/39186016/233870596-b3f176c9-58e7-4da7-9af6-53845e869320.png)
+![output11](https://user-images.githubusercontent.com/39186016/233870597-5221b169-0dfa-423b-8424-a8271434a880.png)
 
 This is because the hyperparameters were tuned using a grid search, which only explored the combination of hyperparameters we defined. As a result, the grid search may not be able to find the true optimal hyperparameters, only the optimal parameters out of the set given. In the future, we would like to explore more advanced hyperparameter tuning methods, such as Bayesian optimization, to find the optimal hyperparameters for the given dataset.
