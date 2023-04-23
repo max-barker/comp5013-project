@@ -73,11 +73,15 @@ Next, the code compares the performance of the models using the above metrics. F
 
 ### Initial Observations
 
-Looking at the dataset as a whole, the Principal Component Analysis (PCA) was not successful in reducing the dimensionality of the data. This is because the data is not linearly separable and so there is no clear correlation or pattern between the features. However, the Attributes Correlation Heatmap gives an insight into the features are most correlated to survival. It also highlighted the features that had been engineered as they had a high with original features, especially those directly derived from an original feature. After performing a Pearsone correlation test with a 0.05 significance level, we can see that all attributes apart from Family_size and SibSp are significant to an individuals survival.  
+Looking at the dataset as a whole, the Principal Component Analysis (PCA) was not successful in reducing the dimensionality of the data. This is because the data is not linearly separable and so there is no clear correlation or pattern between the features. However, the Attributes Correlation Heatmap gives an insight into the features are most correlated to survival. It also highlighted the features that had been engineered as they had a high with original features, especially those directly derived from an original feature. After performing a Pearsone correlation test with a 0.05 significance level, we can see that all attributes apart from Family_size and SibSp are significant to an individuals survival. However, while the number of siblings/spouses seems not to be significant, the number of parents/children is. This implies that having a parent or child on board is more likely to increase your chances of survival than having a sibling or spouse. This is likely due to the fact that children were more likely to be prioritised for lifeboats than adults and had someone looking out for them.
 
 ![Principal Component Analysis](https://user-images.githubusercontent.com/39186016/233869244-818770d5-29d7-44c4-88a1-a69853867a70.png)
 
 ![Correlation Heatmap](https://user-images.githubusercontent.com/39186016/233869218-ceb0ca48-a139-411e-b052-b31cac6e66c2.png)
+
+| **Feature** | _Class_ | _Sex_ | _Fare_ | _Age_  | _SibSp_ | _Parch_ | _Fare_ | _Embarked_ | _Deck_ | _Age_Group_ | _Family_Size_ | _Fare_Per_Person_ |
+|-------------|---------|-------|--------|--------|---------|---------|--------|------------|--------|-------------|---------------|-------------------|
+| **P Value** | 0.0     | 0.0   | 0.0    | 0.0278 | 0.6792  | 0.0011  | 0.0    | 0.0        | 0.0    | 0.0014      | 0.2297        | 0.0               |
 
 Moreover, the phrase "Women and children first" was popularised by [Marshall (1912)](https://books.google.co.uk/books?id=xbxB0JI3OQ0C&q=women+and+children+first&redir_esc=y) and the data displayed in the following image corroborates that this was in fact followed on the Titanic; 75.3% of women on the Titanic survived in comparison to only 20.1% of men. Furthermore, 54% of children on the Titanic survived in comparison to only 37.9% of adults. The graph "Survival by Age" shows the distribution of people that survived by their age.
 
