@@ -107,7 +107,8 @@ Other plots were created, such as "Class by Embarked Location" and "Survival by 
 
 ### Analysis
 - Logistic Regression
-  Both logistic regression and MLP models were found to achieve the highest accuracy among all the models tested. The visualizations   of the data indicated that certain features, such as gender and age, had significant discrepancies in their distribution between   the survival and non-survival groups. This suggests that these features likely have significant coefficients, as a result, the     logistic regression model had a easier time learning due to its ability to learn from significant feature coefficients.
+
+Both logistic regression and MLP models were found to achieve the highest accuracy among all the models tested. The visualizations  of the data indicated that certain features, such as gender and age, had significant discrepancies in their distribution between   the survival and non-survival groups. This suggests that these features likely have significant coefficients, as a result, the     logistic regression model had a easier time learning due to its ability to learn from significant feature coefficients.
 
 - MLP
 
