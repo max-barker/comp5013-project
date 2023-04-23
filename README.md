@@ -1,5 +1,17 @@
 # Data Science and eExplainability of Models Evaluation 
- 
+
+1. [Team Members and Responsibility](#team-members-and-responsibility)
+2. [How to start the artifact](#how-to-start-the-artifact)
+3. [What we started with](#what-we-started-with)
+4. [How the code works](#how-the-code-works)
+5. [Findings](#findings)
+    1. [Initial Observations](#initial-observations)
+    2. [Metrics](#metrics)
+    3. [Results](#results)
+    4. [Analysis](#analysis)
+    5. [Hyperparameter Tuning](#hyperparameter-tuning)
+
+
 ## Team Members and Responsibility
 
 Due to issues with another team, we had to form a group with only two members.
