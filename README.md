@@ -61,13 +61,23 @@ Firstly, the code loads the 'train.csv' file from the Titanic dataset. Once load
 
 Next, the code adds some features through feature engineering. The Sibsp and Parch columns are combined to create a new column called 'Family_Size' which is the total number of family members aboard the Titanic. The 'Cabin' column is also factored to create a new column called 'Deck' which is the deck of the cabin. The 'Fare' column is also factored to create a new column called 'Fare_Per_Person' which is the fare per person. The 'Age' column is also factored to create a new column called 'Age_Group' which is a boolean value indicating whether the passenger was a child or not. These new columns are then added to explore further relationships in the data. 
 
-A series of plots are then created to explore the relationships between the features and the target variable 'Survived'. A heatmap is also created to explore the correlation between the features. PCA is attempted to reduce the dimensionality of the data to show a clear correlation or pattern but this is not successful.
+A series of plots are then created to explore the relationships between the features and the target variable 'Survived'. A heatmap is also created to explore the correlation between the features. To determine the significance of the correlations, a p-test is performed. PCA is attempted to reduce the dimensionality of the data to show a clear correlation or pattern but this is not successful.
 
 Secondly, the code examines the performance of a multitude of classifier models. These models include: Logistic Regression, Decision Trees, Nearest Neighbours, Naive Bayes, Support Vector Machines and Neural Networks. The performance of each model is measured using the accuracy score, class likelihood ratios, ROC curves, DET curves and Precision-Recall curves. 
 
 Next, the code compares the performance of the models using the above metrics. Finally, the code explores the optimisation of the two most promising models - Logistic Regression and Neural Networks. However, both models performed worse than the baseline model and so no further optimisation was performed.
 
 ## Findings
+
+### Initial Observations
+
+Looking at the dataset as a whole, the Principal Component Analysis (PCA) was not successful in reducing the dimensionality of the data. This is because the data is not linearly separable and so there is no clear correlation or pattern between the features. However, the Attributes Correlation Heatmap gives an insight into the features are most correlated to survival. It also highlighted the features that had been engineered as they had a high with original features, especially those directly derived from an original feature. After performing a Pearsone correlation test with a 0.05 significance level, we can see that all attributes apart from Family_size and SibSp are significant to an individuals survival.  
+
+Moreover, the phrase "Women and children first" was popularised by [Marshall (1912)](https://books.google.co.uk/books?id=xbxB0JI3OQ0C&q=women+and+children+first&redir_esc=y) and the data displayed in the following image corroborates that this was in fact followed on the Titanic; 75.3% of women on the Titanic survived in comparison to only 20.1% of men. Furthermore, 54% of children on the Titanic survived in comparison to only 37.9% of adults. The graph "Survival by Age" shows the distribution of people that survived by their age.
+
+Furthermore, the data shows that the higher the deck, the higher the survival rate. One can assume this is because the higher the deck, the closer the passenger was to the lifeboats. The graph "Survival by Deck" shows the distribution of people that survived by their deck; every deck aside from Deck T had a survival rate greater than 50%. More interestingly, the graph "Deck by Class" shows the distribution of people by their deck and class. This shows that the higher the class, the higher the deck. This is because the higher the class, the more expensive the ticket and so the higher the deck. However, it does give us insight into the fact that the higher classes were given priority when boarding the lifeboats. This is backed up by the graph "Survival by Class".
+
+The graph "Survival by Family Size" shows the distribution of people that survived by their family size, with a family size of 3 having the lowest mortality rate. This shows that the larger the family size, the lower the survival rate. This is because the larger the family size, the less likely it is that the family will be able to board a lifeboat together. Additionally, the graph "Family Size by Class" shows that the higher classes tended to travel with smaller family sizes. 
 
 ### Metrics
 - Accuracy
