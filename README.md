@@ -30,9 +30,9 @@ If running locally, you need to ensure all libraries are install. This can be do
 - 
 
 ### Metrics
-    - Accuracy
-    - Recall
-    - ROC curve
+- Accuracy
+- Recall
+- ROC curve
 
 
 ### Results
