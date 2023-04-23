@@ -1,4 +1,4 @@
-# comp5013-project
+# Data Science and eExplainability of Models Evaluation 
  
 ## Team Members and Responsibility
 
@@ -50,6 +50,8 @@ We started looking at what models we could apply to the dataset to predict wheth
 - Naive Bayes
 - Support Vector Machines
 - Neural Networks
+
+[Ekinci et al. (2018)](https://www.researchgate.net/publication/324909545_A_Comparative_Study_on_Machine_Learning_Techniques_Using_Titanic_Dataset) also suggested feature engineering to improve the performance of the models.
 
 ## How the code works
 
