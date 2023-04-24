@@ -138,7 +138,7 @@ This is split into a Positive and a Negative Liklihood Ratio. The Positive Likli
 ![roc](https://user-images.githubusercontent.com/39186016/233873040-fa7afd12-0cb7-487d-af84-a8b667025f77.png)
 ![det](https://user-images.githubusercontent.com/39186016/233873041-bc08ef1a-51c1-4353-99bf-9bddc56d1ddf.png)
 ![pr](https://user-images.githubusercontent.com/39186016/233873039-4b2e0d56-c31b-4d36-9bb0-f01217d56f86.png)
-![accuracy](https://user-images.githubusercontent.com/45512716/233865183-236dcad5-8b4a-4c38-8920-658990b6020f.png)
+![accuracy](https://user-images.githubusercontent.com/39186016/233874452-68cbd43d-c36a-4a9c-bf2c-66d080665ee5.png)
 ![likelihood](https://user-images.githubusercontent.com/45512716/233865155-e6331a4d-d02a-40c8-ae65-d85676b02b98.png)
 
 ### Analysis
